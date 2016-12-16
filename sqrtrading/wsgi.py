@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+addPath = os.path.realpath(__file__).replace('sqrtrading/wsgi.py','')
+sys.path.append(addPath)
 
 from django.core.wsgi import get_wsgi_application
 
