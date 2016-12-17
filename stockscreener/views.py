@@ -28,3 +28,8 @@ def vote(request, question_id):
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'stockscreener/detail.html', {'question': question})
+
+#def index(request):
+#	signals = Signals.objects.distinct('BBG').order_by('BBG')
+#	return render_to_response('home.html', {'signals': signals})
+#
