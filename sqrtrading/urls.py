@@ -4,5 +4,5 @@ from django.contrib import admin
 urlpatterns = [
                url(r'^stockscreener/', include('stockscreener.urls')),
                url(r'^admin/', admin.site.urls),
-               url(r'^$', views.index, name='index'),
+               url(r'^$', include('stockscreener.urls')),
 ]

@@ -1,16 +1,17 @@
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, render_to_response
 
 from .models import Question
+from .models import signals
 
 #def index(request):
 #    return HttpResponse("Hello, world. You're at the polls index.")
 
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    context = {'latest_question_list': latest_question_list}
-    return render(request, 'stockscreener/index.html', context)
-    
+#def index(request):
+#    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+#    context = {'latest_question_list': latest_question_list}
+#    return render(request, 'stockscreener/index.html', context)
+
 #    latest_question_list = Question.objects.order_by('-pub_date')[:5]
 #    output = ', '.join([q.question_text for q in latest_question_list])
 #    return HttpResponse(output)
@@ -29,7 +30,7 @@ def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'stockscreener/detail.html', {'question': question})
 
-#def index(request):
-#	signals = Signals.objects.distinct('BBG').order_by('BBG')
-#	return render_to_response('home.html', {'signals': signals})
-#
+def index(request):
+	signalss = signals.objects.distinct('BBG').order_by('BBG')
+	return render_to_response('home.html', {'signals': signalss})
+
