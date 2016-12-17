@@ -1,0 +1,11 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<head>
+<title>SQR-Trading</title>
+<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
+</head>             
+
+<body>
+    <h1>Screening Results:</h1> 
+    {% block content %} {% endblock %}
+</body>
