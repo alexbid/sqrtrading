@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print "BASE_DIR:", BASE_DIR
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*$!%slbcrrkq_&xrl2-5g7h9p_avji)ko%1$jj5*c5o$)j2%1a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.sqrtrading.com', 'sqrtrading.com', '127.0.0.1']
 
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'sqrtrading.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -79,7 +79,8 @@ DATABASES = {
         'NAME': 'marketdb',
         'USER': 'awsuser',
         'PASSWORD': 'Newyork2012',
-        'HOST': 'sqrtrading.com',
+        'HOST': 'localhost',
+#        'HOST': 'sqrtrading.com',
         'PORT': '5432',
     }
 }
