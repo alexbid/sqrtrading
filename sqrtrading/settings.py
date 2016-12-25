@@ -23,7 +23,7 @@ print "BASE_DIR:", BASE_DIR
 SECRET_KEY = '*$!%slbcrrkq_&xrl2-5g7h9p_avji)ko%1$jj5*c5o$)j2%1a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.sqrtrading.com', 'sqrtrading.com', '127.0.0.1']
 
@@ -79,8 +79,8 @@ DATABASES = {
         'NAME': 'marketdb',
         'USER': 'awsuser',
         'PASSWORD': 'Newyork2012',
-        'HOST': 'localhost',
-#        'HOST': 'sqrtrading.com',
+#        'HOST': 'localhost',
+        'HOST': 'sqrtrading.com',
         'PORT': '5432',
     }
 }
