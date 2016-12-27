@@ -35,4 +35,6 @@ th {
 	height: 70px;
 	left: opx;
 	background: #e1ebed;
+	border-style: double;
+	border-color: #b5aab3;
 }
