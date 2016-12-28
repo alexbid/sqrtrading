@@ -1,40 +1,59 @@
 
 
 html, body {
-    background-color: #f7f5f4;
-    text-align:center;
+	background-color: #f7f5f4;
+	text-align:center;
 	font-family:"arial";
-    height:100%;
-    margin:0px;
-	margin-top: 30px;
-    padding:0;
+	height:100%;
+	margin: 0px;
+	margin-top: 50px;
+	padding:0;
 }
 
 table, td, th {
-    font-size: 1em;
-    border: 1px solid #b5aab3;
+	font-size: 1em;
+	border: 1px solid #b5aab3;
+	border-style: double;
 	margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    background-color: #e1ebed;
+	margin-right: auto;
+	width: 600px;
+	background-color: #e1ebed;
 }
 
 th {
-    font-size: 1.1em;
-    text-align: left;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    background-color: #b5aab3;
-    color: #ffffff;
+	font-size: 1.1em;
+	text-align: left;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #b5aab3;
+	color: #ffffff;
 }
 
 #NavBar {
 	position:fixed;
 	top: 0px;
 	width: 100%;
-	height: 70px;
-	left: opx;
+	height: 55px;
+	left: 0px;
 	background: #e1ebed;
 	border-style: double;
 	border-color: #b5aab3;
 }
+
+#NavBar > ul > li{
+/*	display : inline;*/
+/*	padding : 0 0.5em; /* Pour espacer les boutons entre eux */*/
+	list-style-type : none;  /* Car sinon les puces se placent n'importe où */
+	float: left;
+	height: 40px;
+	padding-right: 40px;
+	position: relative;
+	text-align: left;
+}
+
+.class{
+	display:inline-block;
+/*	float: left;*/
+/*	padding-right: 60px;*/
+}
+
