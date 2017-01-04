@@ -15,11 +15,14 @@ table, td, th {
 	font-size: 1em;
 	border: 1px solid #b5aab3;
 	border-style: double;
-  margin: 60px;
+  padding-top: 8px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
 	background-color: #e1ebed;
+  /*vertical-align: middle;*/
+  /*align-content: center;*/
+  /*align-self: center;*/
 }
 
 /** HEADER **/
@@ -33,7 +36,7 @@ table, td, th {
 }
 
 #datatab {
-  padding-top: 25px;
+  padding-top: 55px;
   color: #424242;
 }
 
