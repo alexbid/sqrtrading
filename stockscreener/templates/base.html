@@ -1,16 +1,15 @@
 {% load staticfiles %}
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>SQR-Trading</title>
-<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
- 
-<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SQR-Trading</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mystyle.css' %}">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -47,6 +46,8 @@
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
 <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/ajax-utils.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 
  </body>
+ </html>
