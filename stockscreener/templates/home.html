@@ -8,10 +8,13 @@
 <table>
 {% for n in signals %}
     <tr>
-        <td>{{ n.BBG }}</td>
+        <!-- <td>{{ n.BBG }}</td> -->
+        <td><a href="https://fr.finance.yahoo.com/echarts?s={{ n.BBG }}#symbol={{ n.BBG }};range=1d" target="_blank"> {{ n.BBG }}</td>	
         <td>{{n.Close}}</td>
         <td>{{n.lastUpdate|date:"d/m/Y"}} {{ n.lastUpdate|time:"H:i" }}</td>
-        <td><a href="https://fr.finance.yahoo.com/echarts?s={{ n.BBG }}#symbol={{ n.BBG }};range=1d" target="_blank"> Chart</a></td>
+
+
+        <!-- <td><a href="https://fr.finance.yahoo.com/echarts?s={{ n.BBG }}#symbol={{ n.BBG }};range=1d" target="_blank"> Chart</a></td> -->
     </tr>
 {% endfor %}
 {{ getLastClose }}
