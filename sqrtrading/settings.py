@@ -78,8 +78,8 @@ DATABASES = {
         'NAME': 'marketdb',
         'USER': 'awsuser',
         'PASSWORD': 'Newyork2012',
-#        'HOST': 'sqrtrading.com',
-        'HOST': 'sqrtrading.com',
+#        'HOST': '192.268.0.32',
+        'HOST': '192.168.0.32',
         'PORT': '5432',
     }
 }
