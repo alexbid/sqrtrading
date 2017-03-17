@@ -42,7 +42,7 @@ class batch_run(models.Model):
     mnemo = models.CharField(max_length=12, null=True, blank=True)
 
     def __str__(self):
-        return '%s %s %s %s %s' % (self.BBG, self.CDR, self.web_source, self.IDX, self.isWorking)
+        return '%s %s %s %s %s' % (self.CDR, self.BBG, self.web_source, self.IDX, self.isWorking)
 
 
 
