@@ -36,10 +36,10 @@ class calendar(models.Model):
 class batch_run(models.Model):
     BBG = models.CharField(max_length=12)
     CDR = models.CharField(max_length=12)
-    web_source = models.CharField(max_length=12)
+    web_source = models.CharField(max_length=12, null=True, blank=True)
     IDX = models.CharField(max_length=12)
     isWorking = models.BooleanField()
-    mnemo = models.CharField(max_length=12)
+    mnemo = models.CharField(max_length=12, null=True, blank=True)
 
     def __str__(self):
         return str(self.BBG) + "" + str(self.CDR)+ "\t" + str(self.web_source)+ "\t" + str(self.IDX)+ "\t" + str(self.isWorking)
