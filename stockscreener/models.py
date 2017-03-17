@@ -20,7 +20,7 @@ class signals(models.Model):
     lastUpdate = models.DateTimeField()
 
     def __str__(self):
-        return self.BBG
+        return '%s %s' % (self.cdr, self.lastUpdate)
 
 
 @python_2_unicode_compatible  # only if you need to support Python 2
@@ -29,7 +29,7 @@ class calendar(models.Model):
     cdr = models.CharField(max_length=2)
 
     def __str__(self):
-        return str(self.cdr) + "\t" + str(self.date)
+        return '%s %s %s' % (self.BBG, self.lastUpdate, self.Close)
 
 
 @python_2_unicode_compatible  # only if you need to support Python 2
@@ -42,7 +42,8 @@ class batch_run(models.Model):
     mnemo = models.CharField(max_length=12, null=True, blank=True)
 
     def __str__(self):
-        return str(self.BBG) + "" + str(self.CDR)+ "\t" + str(self.web_source)+ "\t" + str(self.IDX)+ "\t" + str(self.isWorking)
+        return '%s %s %s %s %s' % (self.BBG, self.CDR, self.web_source, self.IDX, self.isWorking)
+
 
 
 
