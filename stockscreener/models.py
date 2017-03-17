@@ -20,7 +20,7 @@ class signals(models.Model):
     lastUpdate = models.DateTimeField()
 
     def __str__(self):
-        return '%s %s' % (self.cdr, self.lastUpdate)
+        return '%s %s %s' % (self.BBG, self.lastUpdate, self.Close)
 
 
 @python_2_unicode_compatible  # only if you need to support Python 2
@@ -29,7 +29,7 @@ class calendar(models.Model):
     cdr = models.CharField(max_length=2)
 
     def __str__(self):
-        return '%s %s %s' % (self.BBG, self.lastUpdate, self.Close)
+        return '%s %s' % (self.cdr, self.date)
 
 
 @python_2_unicode_compatible  # only if you need to support Python 2
