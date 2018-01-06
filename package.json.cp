@@ -2,10 +2,7 @@
   "name": "sqrtrading",
   "version": "1.0.0",
   "main": "index.js",
-  "server": {
-    "baseDir": "stockscreener/",
-    "directory": true
-  },
+  "server": "stockscreener",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-compile": "node-sass sqrtrading/static/scss -o sqrtrading/static/css",
@@ -28,6 +25,10 @@
     "browser-sync": "^2.18.5",
     "concurrently": "^3.1.0",
     "node-sass": "^4.1.1"
+  },
+  "server": {
+    "baseDir": "stockscreener/",
+    "directory": true
   },
   "description": ""
 }
