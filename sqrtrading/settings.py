@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'marketdb',
         'USER': 'awsuser',
         'PASSWORD': 'Newyork2012',
-        'HOST': '192.168.0.32',
+        'HOST': '192.168.1.32',
         'PORT': '5432',
     }
 }
