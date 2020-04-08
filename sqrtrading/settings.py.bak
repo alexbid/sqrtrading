@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '*$!%slbcrrkq_&xrl2-5g7h9p_avji)ko%1$jj5*c5o$)j2%1a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.sqrtrading.com', 'sqrtrading.com', '127.0.0.1']
 
@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'marketdb',
         'USER': 'awsuser',
         'PASSWORD': 'Newyork2012',
-        'HOST': '192.168.1.32',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
